@@ -1,0 +1,12 @@
+node_modules
+dist
+dist-ssr
+*.local
+.DS_Store
+.vite
+
+# Source material — kept local, not published to a public repo
+Curriculum vitae.pdf
+*MIP*.pdf
+*workplan.pdf
+profileicon.png
