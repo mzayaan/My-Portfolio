@@ -149,12 +149,14 @@ export const projects: Project[] = [
   },
   {
     number: '10',
-    name: 'Horsebetting 365',
-    category: 'Personal Project',
-    stack: 'Java',
+    name: 'Horse Betting 365',
+    category: 'Personal Project · Playable',
+    stack: 'Java · Swing',
     summary:
-      'A Java application modelling a horse-racing betting platform — race and runner management, odds handling, bet placement and payout settlement.',
+      'A horse-racing betting simulator. Bet across four races — pick a horse from the field and a stake, with input validated at every step — then see the winner drawn and your returns settled. Odds lengthen with each race, from 2× on the first to 5× on the fourth. Compiled to run in the browser through CheerpJ.',
     href: repo('Horsebetting-365'),
+    live: 'https://mzayaan.github.io/Horsebetting-365/',
+    liveLabel: 'Play Game',
     images: shots('horse'),
   },
   {
