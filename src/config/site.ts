@@ -18,7 +18,13 @@ export const site = {
 
 export const navLinks = [
   { label: 'About', href: '#about' },
+  { label: 'Experience', href: '#experience' },
   { label: 'Dissertation', href: '#dissertation' },
+  { label: 'Curriculum', href: '#curriculum' },
+  { label: 'Skills', href: '#skills' },
+  { label: 'Languages', href: '#languages' },
+  { label: 'Modules', href: '#modules' },
+  { label: 'GitHub', href: '#repos' },
   { label: 'Projects', href: '#projects' },
   { label: 'Contact', href: '#contact' },
 ] as const;

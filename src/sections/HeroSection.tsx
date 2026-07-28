@@ -17,13 +17,13 @@ export default function HeroSection() {
         as="nav"
         delay={0}
         y={-20}
-        className="relative z-20 flex w-full items-center justify-between px-6 pt-6 md:px-10 md:pt-8"
+        className="relative z-20 flex w-full flex-wrap items-center justify-center gap-x-4 gap-y-2 px-5 pt-6 sm:gap-x-6 md:gap-x-8 md:px-10 md:pt-8 lg:justify-between lg:gap-x-4"
       >
         {navLinks.map((link) => (
           <a
             key={link.label}
             href={link.href}
-            className="text-sm font-medium uppercase tracking-wider transition-opacity duration-200 hover:opacity-70 md:text-lg lg:text-[1.4rem]"
+            className="text-[0.65rem] font-medium uppercase tracking-wider transition-opacity duration-200 hover:opacity-70 sm:text-xs md:text-sm lg:text-[0.95rem] xl:text-base"
             style={{ color: '#D7E2EA' }}
           >
             {link.label}

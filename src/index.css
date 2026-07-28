@@ -17,6 +17,22 @@ body,
   font-family: 'Kanit', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* keep anchored headings clear of the top edge */
+section[id],
+footer[id] {
+  scroll-margin-top: 1.5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
