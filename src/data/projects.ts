@@ -47,17 +47,17 @@ export const projects: Project[] = [
   },
   {
     number: '02',
-    name: 'Ninja Dash',
+    name: 'Ninja Runner',
     category: 'Team Project · Playable',
     stack: 'Construct 3 · 2D Platformer',
     summary:
-      'My first game — built as the opening assignment for Computer Game Programming in Year 3. A 2D ninja platformer with nine levels, coin collection, enemy encounters and a UN Sustainable Development Goals theme woven through the objectives. Made in Construct 3 and published to itch.io, playable in the browser.',
+      'My first game — built as the opening assignment for Computer Game Programming in Year 3. A 2D ninja platformer with nine levels, coin collection and enemy encounters across varied environments. Made in Construct 3 and published to itch.io, playable straight in the browser.',
     href: null,
     live: 'https://anchkeshav.itch.io/ninja-dash',
     liveLabel: 'Play Game',
     video: {
-      src: asset('video/ninja-dash.mp4'),
-      poster: asset('video/ninja-dash-poster.jpg'),
+      src: asset('video/ninja-runner.mp4'),
+      poster: asset('video/ninja-runner-poster.jpg'),
     },
     collaborators: [
       { name: 'Keshav Ancharruz', github: 'https://github.com/anchkeshav' },
