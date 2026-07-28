@@ -94,11 +94,12 @@ export default function ContactSection() {
 
       <p
         aria-hidden="true"
-        className="hero-heading mt-10 select-none overflow-visible text-center font-script"
+        className="hero-heading mt-8 select-none overflow-visible text-center font-script"
         style={{
-          fontSize: 'clamp(1.5rem, 3vw, 2.4rem)',
-          lineHeight: 1.75,
-          paddingBottom: '0.15em',
+          fontSize: 'clamp(0.6rem, 1.1vw, 0.85rem)',
+          lineHeight: 2,
+          letterSpacing: '0.08em',
+          paddingBottom: '0.2em',
         }}
       >
         {site.monogram}
