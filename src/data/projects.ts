@@ -163,12 +163,14 @@ export const projects: Project[] = [
   },
   {
     number: '12',
-    name: 't_emblemy Collectibles',
-    category: 'Web Project',
-    stack: 'JavaScript · HTML · CSS',
+    name: 'T_Emblemy Collectibles',
+    category: 'Web Project · Live',
+    stack: 'HTML · CSS · JavaScript',
     summary:
-      'A collectibles storefront with a browsable catalogue, listing management and an order flow, built with a JavaScript front end.',
+      'A storefront for collectible books — browse the catalogue, filter by genre, and move items through a wishlist and cart to checkout. Wishlist and cart persist in local storage so selections survive between sessions, across a set of modular pages for books, delivery and contact.',
     href: repo('t_emblemy-collectibles-website'),
+    live: 'https://mzayaan.github.io/t_emblemy-collectibles-website/',
+    liveLabel: 'Live Site',
     images: shots('emblemy'),
   },
 ];
