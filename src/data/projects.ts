@@ -138,11 +138,13 @@ export const projects: Project[] = [
   {
     number: '09',
     name: 'Lottotech',
-    category: 'Year 1 Project',
-    stack: 'Java',
+    category: 'Year 1 Project · Playable',
+    stack: 'Java · Swing',
     summary:
-      'A lottery system modelled on Lottotech Mauritius — ticket purchase, draw generation and result checking, built in Java during the first year of the degree.',
+      'A lottery simulator modelled on Lottotech Mauritius — pick six numbers between 1 and 40 with validation against duplicates and out-of-range entries, draw six at random, then count the matches and report the result. Built in Java during the first year of the degree, and compiled to run in the browser through CheerpJ.',
     href: repo('Lottotech'),
+    live: 'https://mzayaan.github.io/Lottotech/',
+    liveLabel: 'Play Game',
     images: shots('lottotech'),
   },
   {
