@@ -83,6 +83,22 @@ export const projects: Project[] = [
   },
   {
     number: '04',
+    name: 'SmileCare',
+    category: 'Personal Project · Live',
+    stack: 'Flutter · Dart · Supabase',
+    summary:
+      'A dental clinic management app with two sides to it. Patients register, browse dentists by specialisation, and book through a four-step flow — dentist, treatment, date, time — then track upcoming appointments and bills. Admins manage dentists, treatments, appointments and billing from a dashboard. Built in Flutter against a Supabase Postgres backend.',
+    href: repo('Flutter-Dentist-app'),
+    live: 'https://mzayaan.github.io/Flutter-Dentist-app/',
+    liveLabel: 'Live Demo',
+    images: {
+      colOneTop: asset('projects/smilecare-4.webp'),
+      colOneBottom: asset('projects/smilecare-3.webp'),
+      colTwo: asset('projects/smilecare-2.webp'),
+    },
+  },
+  {
+    number: '05',
     name: 'BookSmart Web Application',
     category: 'Academic Project',
     stack: 'ASP.NET · SQL Server · Bootstrap',
@@ -92,7 +108,7 @@ export const projects: Project[] = [
     images: shots('booksmart'),
   },
   {
-    number: '05',
+    number: '06',
     name: 'Bookstore Management System',
     category: 'Academic Project',
     stack: 'Oracle Forms · SQL',
@@ -102,7 +118,7 @@ export const projects: Project[] = [
     images: shots('oracleforms'),
   },
   {
-    number: '06',
+    number: '07',
     name: 'BookStore Website',
     category: 'Academic Project',
     stack: 'HTML · CSS · JavaScript · jQuery',
@@ -112,7 +128,7 @@ export const projects: Project[] = [
     images: shots('bookstore'),
   },
   {
-    number: '07',
+    number: '08',
     name: 'Snake Game',
     category: 'Team Project · Playable',
     stack: 'Java · Swing · Object-Oriented Design',
@@ -124,7 +140,7 @@ export const projects: Project[] = [
     images: shots('snake'),
   },
   {
-    number: '08',
+    number: '09',
     name: 'Student Management System',
     category: 'Academic Project · Live',
     stack: 'Java · Swing · Data Structures',
@@ -136,7 +152,7 @@ export const projects: Project[] = [
     images: shots('sms'),
   },
   {
-    number: '09',
+    number: '10',
     name: 'Lottotech',
     category: 'Year 1 Project · Playable',
     stack: 'Java · Swing',
@@ -148,7 +164,7 @@ export const projects: Project[] = [
     images: shots('lottotech'),
   },
   {
-    number: '10',
+    number: '11',
     name: 'Horse Betting 365',
     category: 'Personal Project · Playable',
     stack: 'Java · Swing',
@@ -160,7 +176,7 @@ export const projects: Project[] = [
     images: shots('horse'),
   },
   {
-    number: '11',
+    number: '12',
     name: 'BeatCam',
     category: 'Personal Project',
     stack: 'JavaScript',
@@ -170,7 +186,7 @@ export const projects: Project[] = [
     images: shots('beatcam'),
   },
   {
-    number: '12',
+    number: '13',
     name: 'T_Emblemy Collectibles',
     category: 'Web Project · Live',
     stack: 'HTML · CSS · JavaScript',
