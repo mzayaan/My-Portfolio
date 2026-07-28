@@ -18,15 +18,15 @@ export default function ContactSection() {
   return (
     <footer
       id="contact"
-      className="relative w-full px-5 pb-14 pt-20 sm:px-8 sm:pt-24 md:px-10 md:pt-32"
+      className="relative z-20 w-full px-5 pb-14 pt-24 sm:px-8 sm:pt-32 md:px-10 md:pt-40"
       style={{ background: '#0C0C0C' }}
     >
       <FadeIn
         as="h2"
         delay={0}
         y={40}
-        className="hero-heading mb-12 text-center font-black uppercase leading-none tracking-tight sm:mb-16"
-        style={{ fontSize: 'clamp(2.5rem, 11vw, 150px)' }}
+        className="hero-heading mb-12 text-center font-black uppercase tracking-tight sm:mb-16"
+        style={{ fontSize: 'clamp(2.5rem, 11vw, 150px)', lineHeight: 1.1 }}
       >
         Get in touch
       </FadeIn>
