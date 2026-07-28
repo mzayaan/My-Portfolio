@@ -114,11 +114,13 @@ export const projects: Project[] = [
   {
     number: '07',
     name: 'Snake Game',
-    category: 'Team Project',
-    stack: 'Java · Object-Oriented Design',
+    category: 'Team Project · Playable',
+    stack: 'Java · Swing · Object-Oriented Design',
     summary:
-      'A 2D Snake game built with a team using object-oriented principles — handling character movement, collision detection, scoring and user interaction mechanics.',
+      'A 2D Snake game built with a team using object-oriented principles — snake movement and growth, food and bomb spawning, collision detection, scoring and a leaderboard. Written as a desktop Java application, and compiled to run unmodified in the browser through CheerpJ.',
     href: repo('snake-game-java'),
+    live: 'https://mzayaan.github.io/snake-game-java/',
+    liveLabel: 'Play Game',
     images: shots('snake'),
   },
   {
