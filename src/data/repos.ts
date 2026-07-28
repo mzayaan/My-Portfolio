@@ -10,6 +10,13 @@ const gh = (repo: string) => `https://github.com/mzayaan/${repo}`;
 /** Public repositories on github.com/mzayaan. */
 export const repos: Repo[] = [
   {
+    name: 'Geoexplorer-flutter',
+    language: 'Dart · Flutter',
+    description:
+      'Cross-platform geography learning app — continents, landmarks, capitals and a scored quiz, targeting mobile, web and desktop.',
+    href: gh('Geoexplorer-flutter'),
+  },
+  {
     name: 'BeatCam',
     language: 'JavaScript',
     description:

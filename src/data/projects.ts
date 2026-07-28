@@ -67,6 +67,20 @@ export const projects: Project[] = [
   },
   {
     number: '03',
+    name: 'GeoExplorer',
+    category: 'Personal Project',
+    stack: 'Flutter · Dart',
+    summary:
+      'A cross-platform geography learning app built in Flutter. Browse the seven continents with country counts and land area, read up on famous landmarks from the Eiffel Tower to the Moai statues, explore world capitals, then test yourself with a ten-question quiz that tracks your score as you go. Targets Android, iOS, web, Windows, macOS and Linux from one codebase.',
+    href: repo('Geoexplorer-flutter'),
+    images: {
+      colOneTop: asset('projects/geoexplorer-1.webp'),
+      colOneBottom: asset('projects/geoexplorer-2.webp'),
+      colTwo: asset('projects/geoexplorer-3.webp'),
+    },
+  },
+  {
+    number: '04',
     name: 'BookSmart Web Application',
     category: 'Academic Project',
     stack: 'ASP.NET · SQL Server · Bootstrap',
@@ -76,7 +90,7 @@ export const projects: Project[] = [
     images: shots('booksmart'),
   },
   {
-    number: '04',
+    number: '05',
     name: 'Bookstore Management System',
     category: 'Academic Project',
     stack: 'Oracle Forms · SQL',
@@ -86,7 +100,7 @@ export const projects: Project[] = [
     images: shots('oracleforms'),
   },
   {
-    number: '05',
+    number: '06',
     name: 'BookStore Website',
     category: 'Academic Project',
     stack: 'HTML · CSS · JavaScript · jQuery',
@@ -96,7 +110,7 @@ export const projects: Project[] = [
     images: shots('bookstore'),
   },
   {
-    number: '06',
+    number: '07',
     name: 'Snake Game',
     category: 'Team Project',
     stack: 'Java · Object-Oriented Design',
@@ -106,7 +120,7 @@ export const projects: Project[] = [
     images: shots('snake'),
   },
   {
-    number: '07',
+    number: '08',
     name: 'Student Management System',
     category: 'Academic Project',
     stack: 'Java · Data Structures & Algorithms',
@@ -116,7 +130,7 @@ export const projects: Project[] = [
     images: shots('sms'),
   },
   {
-    number: '08',
+    number: '09',
     name: 'Lottotech',
     category: 'Year 1 Project',
     stack: 'Java',
@@ -126,7 +140,7 @@ export const projects: Project[] = [
     images: shots('lottotech'),
   },
   {
-    number: '09',
+    number: '10',
     name: 'Horsebetting 365',
     category: 'Personal Project',
     stack: 'Java',
@@ -136,7 +150,7 @@ export const projects: Project[] = [
     images: shots('horse'),
   },
   {
-    number: '10',
+    number: '11',
     name: 'BeatCam',
     category: 'Personal Project',
     stack: 'JavaScript',
@@ -146,7 +160,7 @@ export const projects: Project[] = [
     images: shots('beatcam'),
   },
   {
-    number: '11',
+    number: '12',
     name: 't_emblemy Collectibles',
     category: 'Web Project',
     stack: 'JavaScript · HTML · CSS',
