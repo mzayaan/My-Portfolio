@@ -126,11 +126,13 @@ export const projects: Project[] = [
   {
     number: '08',
     name: 'Student Management System',
-    category: 'Academic Project',
-    stack: 'Java · Data Structures & Algorithms',
+    category: 'Academic Project · Live',
+    stack: 'Java · Swing · Data Structures',
     summary:
-      'A console-based system for managing student records, applying arrays, linked lists and stacks to keep data manipulation fast and memory use predictable.',
+      'A student records system built on a hand-written singly linked list rather than the collections framework — add, update, delete, search, and sort by student number or name, with records persisted to file. Written as a Java Swing desktop app and compiled to run in the browser through CheerpJ.',
     href: repo('student-management-system-java'),
+    live: 'https://mzayaan.github.io/student-management-system-java/',
+    liveLabel: 'Live Demo',
     images: shots('sms'),
   },
   {
