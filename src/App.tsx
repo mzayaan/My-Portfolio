@@ -2,6 +2,7 @@ import HeroSection from './sections/HeroSection';
 import MarqueeSection from './sections/MarqueeSection';
 import AboutSection from './sections/AboutSection';
 import ExperienceSection from './sections/ExperienceSection';
+import DissertationSection from './sections/DissertationSection';
 import CurriculumSection from './sections/CurriculumSection';
 import ServicesSection from './sections/ServicesSection';
 import LanguagesSection from './sections/LanguagesSection';
@@ -20,6 +21,7 @@ export default function App() {
       <MarqueeSection />
       <AboutSection />
       <ExperienceSection />
+      <DissertationSection />
       <CurriculumSection />
       <ServicesSection />
       <LanguagesSection />
