@@ -93,7 +93,15 @@ export default function ContactSection() {
       </div>
 
       <p
-        className="mt-12 text-center text-[0.65rem] font-light uppercase tracking-[0.25em] opacity-35 sm:text-xs"
+        aria-hidden="true"
+        className="hero-heading mt-12 select-none text-center font-script leading-none"
+        style={{ fontSize: 'clamp(1.5rem, 3vw, 2.4rem)' }}
+      >
+        {site.monogram}
+      </p>
+
+      <p
+        className="mt-4 text-center text-[0.65rem] font-light uppercase tracking-[0.25em] opacity-35 sm:text-xs"
         style={{ color: '#D7E2EA' }}
       >
         © {new Date().getFullYear()} {site.fullName} · References available on request

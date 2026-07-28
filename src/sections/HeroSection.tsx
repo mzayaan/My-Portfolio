@@ -60,21 +60,13 @@ export default function HeroSection() {
 
       {/* Bottom bar */}
       <div className="relative z-20 mt-auto flex w-full items-end justify-between px-6 pb-7 sm:pb-8 md:px-10 md:pb-10">
-        <FadeIn delay={0.35} y={20} className="flex items-end gap-4 sm:gap-6 md:gap-8">
+        <FadeIn delay={0.35} y={20}>
           <p
             className="max-w-[160px] font-light uppercase leading-snug tracking-wide sm:max-w-[220px] md:max-w-[260px]"
             style={{ color: '#D7E2EA', fontSize: 'clamp(0.75rem, 1.4vw, 1.5rem)' }}
           >
             {site.tagline}
           </p>
-
-          <span
-            aria-hidden="true"
-            className="hero-heading select-none font-script leading-none"
-            style={{ fontSize: 'clamp(2.6rem, 6vw, 6rem)' }}
-          >
-            {site.monogram}
-          </span>
         </FadeIn>
 
         <FadeIn delay={0.5} y={20}>
