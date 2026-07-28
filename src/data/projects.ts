@@ -68,11 +68,13 @@ export const projects: Project[] = [
   {
     number: '03',
     name: 'GeoExplorer',
-    category: 'Personal Project',
+    category: 'Personal Project · Live',
     stack: 'Flutter · Dart',
     summary:
       'A cross-platform geography learning app built in Flutter. Browse the seven continents with country counts and land area, read up on famous landmarks from the Eiffel Tower to the Moai statues, explore world capitals, then test yourself with a ten-question quiz that tracks your score as you go. Targets Android, iOS, web, Windows, macOS and Linux from one codebase.',
     href: repo('Geoexplorer-flutter'),
+    live: 'https://mzayaan.github.io/Geoexplorer-flutter/',
+    liveLabel: 'Live Demo',
     images: {
       colOneTop: asset('projects/geoexplorer-1.webp'),
       colOneBottom: asset('projects/geoexplorer-2.webp'),
