@@ -1,3 +1,5 @@
+import { asset } from '../lib/asset';
+
 export type Project = {
   number: string;
   name: string;
@@ -8,14 +10,18 @@ export type Project = {
   href: string | null;
   /** Live deployment, if the project is hosted somewhere. */
   live?: string;
+  /** Label for the live button. Defaults to "Live Site". */
+  liveLabel?: string;
+  /** Gameplay / demo video shown instead of the image grid. */
+  video?: { src: string; poster: string };
+  /** Team members who contributed, linked to their GitHub. */
+  collaborators?: { name: string; github: string }[];
   images: {
     colOneTop: string;
     colOneBottom: string;
     colTwo: string;
   };
 };
-
-import { asset } from '../lib/asset';
 
 const GITHUB = 'https://github.com/mzayaan';
 const repo = (name: string) => `${GITHUB}/${name}`;
@@ -41,6 +47,26 @@ export const projects: Project[] = [
   },
   {
     number: '02',
+    name: 'Ninja Dash',
+    category: 'Team Project · Playable',
+    stack: 'Construct 3 · 2D Platformer',
+    summary:
+      'My first game — built as the opening assignment for Computer Game Programming in Year 3. A 2D ninja platformer with nine levels, coin collection, enemy encounters and a UN Sustainable Development Goals theme woven through the objectives. Made in Construct 3 and published to itch.io, playable in the browser.',
+    href: null,
+    live: 'https://anchkeshav.itch.io/ninja-dash',
+    liveLabel: 'Play Game',
+    video: {
+      src: asset('video/ninja-dash.mp4'),
+      poster: asset('video/ninja-dash-poster.jpg'),
+    },
+    collaborators: [
+      { name: 'Keshav Ancharruz', github: 'https://github.com/anchkeshav' },
+      { name: 'Loic Fred C.', github: 'https://github.com/loicfred' },
+    ],
+    images: shots('snake'),
+  },
+  {
+    number: '03',
     name: 'BookSmart Web Application',
     category: 'Academic Project',
     stack: 'ASP.NET · SQL Server · Bootstrap',
@@ -50,7 +76,7 @@ export const projects: Project[] = [
     images: shots('booksmart'),
   },
   {
-    number: '03',
+    number: '04',
     name: 'Bookstore Management System',
     category: 'Academic Project',
     stack: 'Oracle Forms · SQL',
@@ -60,7 +86,7 @@ export const projects: Project[] = [
     images: shots('oracleforms'),
   },
   {
-    number: '04',
+    number: '05',
     name: 'BookStore Website',
     category: 'Academic Project',
     stack: 'HTML · CSS · JavaScript · jQuery',
@@ -70,7 +96,7 @@ export const projects: Project[] = [
     images: shots('bookstore'),
   },
   {
-    number: '05',
+    number: '06',
     name: 'Snake Game',
     category: 'Team Project',
     stack: 'Java · Object-Oriented Design',
@@ -80,7 +106,7 @@ export const projects: Project[] = [
     images: shots('snake'),
   },
   {
-    number: '06',
+    number: '07',
     name: 'Student Management System',
     category: 'Academic Project',
     stack: 'Java · Data Structures & Algorithms',
@@ -90,7 +116,7 @@ export const projects: Project[] = [
     images: shots('sms'),
   },
   {
-    number: '07',
+    number: '08',
     name: 'Lottotech',
     category: 'Year 1 Project',
     stack: 'Java',
@@ -100,7 +126,7 @@ export const projects: Project[] = [
     images: shots('lottotech'),
   },
   {
-    number: '08',
+    number: '09',
     name: 'Horsebetting 365',
     category: 'Personal Project',
     stack: 'Java',
@@ -110,7 +136,7 @@ export const projects: Project[] = [
     images: shots('horse'),
   },
   {
-    number: '09',
+    number: '10',
     name: 'BeatCam',
     category: 'Personal Project',
     stack: 'JavaScript',
@@ -120,7 +146,7 @@ export const projects: Project[] = [
     images: shots('beatcam'),
   },
   {
-    number: '10',
+    number: '11',
     name: 't_emblemy Collectibles',
     category: 'Web Project',
     stack: 'JavaScript · HTML · CSS',

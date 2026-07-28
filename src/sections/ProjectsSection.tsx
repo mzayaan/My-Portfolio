@@ -74,7 +74,7 @@ function ProjectCard({
             {project.live && (
               <LiveProjectButton
                 href={project.live}
-                label="Live Site"
+                label={project.liveLabel ?? 'Live Site'}
                 variant="solid"
               />
             )}
@@ -94,7 +94,62 @@ function ProjectCard({
           {project.summary}
         </p>
 
-        {/* Bottom row: image grid */}
+        {project.collaborators && (
+          <div className="mb-5 flex flex-wrap items-center gap-2 px-2 md:px-4">
+            <span
+              className="font-light uppercase tracking-widest opacity-40"
+              style={{
+                color: '#D7E2EA',
+                fontSize: 'clamp(0.62rem, 1vw, 0.78rem)',
+              }}
+            >
+              Built with
+            </span>
+            {project.collaborators.map((person) => (
+              <a
+                key={person.github}
+                href={person.github}
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-2 rounded-full border border-[#D7E2EA]/25 py-1 pl-1 pr-3 transition-colors duration-300 hover:bg-[#D7E2EA]/10"
+              >
+                <img
+                  src={`${person.github}.png?size=48`}
+                  alt=""
+                  aria-hidden="true"
+                  loading="lazy"
+                  className="h-6 w-6 rounded-full"
+                />
+                <span
+                  className="font-light"
+                  style={{
+                    color: '#D7E2EA',
+                    fontSize: 'clamp(0.68rem, 1.1vw, 0.85rem)',
+                  }}
+                >
+                  {person.name}
+                </span>
+              </a>
+            ))}
+          </div>
+        )}
+
+        {/* Bottom row: gameplay video, or the image grid */}
+        {project.video ? (
+          <div className="px-2 md:px-4">
+            <video
+              src={project.video.src}
+              poster={project.video.poster}
+              controls
+              loop
+              muted
+              playsInline
+              preload="none"
+              className="w-full rounded-[28px] bg-black object-cover sm:rounded-[36px] md:rounded-[44px]"
+              style={{ maxHeight: 'clamp(220px, 40vh, 460px)' }}
+            />
+          </div>
+        ) : (
         <div className="flex gap-3 sm:gap-4 md:gap-5">
           <div className="flex w-[40%] flex-col gap-3 sm:gap-4 md:gap-5">
             <img
@@ -122,6 +177,7 @@ function ProjectCard({
             />
           </div>
         </div>
+        )}
       </motion.article>
     </div>
   );
