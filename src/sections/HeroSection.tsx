@@ -43,15 +43,38 @@ export default function HeroSection() {
         </FadeIn>
       </div>
 
+      <FadeIn
+        as="p"
+        delay={0.3}
+        y={12}
+        className="relative z-20 -mt-1 w-full text-center font-light uppercase sm:mt-0 md:mt-1"
+        style={{
+          color: '#D7E2EA',
+          opacity: 0.45,
+          fontSize: 'clamp(0.55rem, 1.05vw, 0.9rem)',
+          letterSpacing: '0.42em',
+        }}
+      >
+        {site.fullName}
+      </FadeIn>
+
       {/* Bottom bar */}
       <div className="relative z-20 mt-auto flex w-full items-end justify-between px-6 pb-7 sm:pb-8 md:px-10 md:pb-10">
-        <FadeIn delay={0.35} y={20}>
+        <FadeIn delay={0.35} y={20} className="flex items-end gap-4 sm:gap-6 md:gap-8">
           <p
             className="max-w-[160px] font-light uppercase leading-snug tracking-wide sm:max-w-[220px] md:max-w-[260px]"
             style={{ color: '#D7E2EA', fontSize: 'clamp(0.75rem, 1.4vw, 1.5rem)' }}
           >
             {site.tagline}
           </p>
+
+          <span
+            aria-hidden="true"
+            className="hero-heading select-none font-script leading-none"
+            style={{ fontSize: 'clamp(2.6rem, 6vw, 6rem)' }}
+          >
+            {site.monogram}
+          </span>
         </FadeIn>
 
         <FadeIn delay={0.5} y={20}>

@@ -9,6 +9,7 @@ export default {
       },
       fontFamily: {
         sans: ['Kanit', 'sans-serif'],
+        script: ['"Great Vibes"', 'cursive'],
       },
     },
   },

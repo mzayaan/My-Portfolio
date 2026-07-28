@@ -1,6 +1,8 @@
 export const site = {
   name: 'Zayaan',
   fullName: 'Mohammad Zayaan Husain Dulmeer',
+  /** Decorative calligraphy monogram in the hero. Try 'Z' or 'MZHD' to taste. */
+  monogram: 'MZ',
   role: 'Software Engineer',
   tagline:
     'a software engineering student driven by building striking, reliable and scalable products',
