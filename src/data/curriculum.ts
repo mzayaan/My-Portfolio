@@ -1,7 +1,7 @@
 export type CurriculumLevel = {
   level: string;
   label: string;
-  status: 'Completed' | 'In progress';
+  status: 'Completed' | 'In progress' | 'Upcoming';
   note: string;
   modules: string[];
 };
@@ -51,12 +51,23 @@ export const curriculum: CurriculumLevel[] = [
     level: 'Level 3',
     label: 'Year 3 · Semester 1',
     status: 'In progress',
-    note: 'Specialisation — mobile, IoT, machine learning and game development, all at 6 credits each.',
+    note: 'Specialisation — mobile, IoT, machine learning and game development.',
     modules: [
       'Advanced Mobile Application Development',
       'Smart IoT Applications',
       'AI & Machine Learning Techniques',
       'Computer Game Programming',
+    ],
+  },
+  {
+    level: 'Level 3',
+    label: 'Year 3 · Semester 2',
+    status: 'Upcoming',
+    note: 'Still to come — distributed systems, quality assurance and taking a product to market.',
+    modules: [
+      'Blockchain Systems',
+      'Software Quality & Testing',
+      'Technopreneurship',
     ],
   },
 ];
