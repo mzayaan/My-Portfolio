@@ -36,6 +36,18 @@ const shots = (slug: string) => ({
 export const projects: Project[] = [
   {
     number: '01',
+    name: 'EduMU',
+    category: 'Personal Project · Live',
+    stack: 'React · TypeScript · Supabase · PostgreSQL',
+    summary:
+      'A school management system for Mauritian secondary schools, built around the idea that the database is the API — PostgREST and row-level security decide what every request returns, and nothing is authorised in the client. Covers attendance registers, marks and moderation, report books, a timetable solver, examinations and seating, conduct and pastoral records, curriculum planning and a guardian portal, across a multi-tenant schema of 101 tables with row-level security forced on every one. The web app is an offline-first PWA, so registers can be taken on a dead connection.',
+    href: repo('EduMu'),
+    live: 'https://mzayaan.github.io/EduMu/',
+    liveLabel: 'Live Demo',
+    images: shots('edumu'),
+  },
+  {
+    number: '02',
     name: 'DevIntel',
     category: 'Personal Project · Live',
     stack: 'Web App · Progressive Web App (PWA)',
