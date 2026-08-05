@@ -37,7 +37,7 @@ function ProjectCard({
                 fontSize: 'clamp(2.5rem, 8vw, 110px)',
               }}
             >
-              {project.number}
+              {String(index + 1).padStart(2, '0')}
             </span>
             <div className="flex flex-col gap-1">
               <span
@@ -214,7 +214,7 @@ export default function ProjectsSection() {
         const start = index / total;
         return (
           <ProjectCard
-            key={project.number}
+            key={project.name}
             project={project}
             index={index}
             progress={scrollYProgress}

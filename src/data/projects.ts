@@ -1,7 +1,6 @@
 import { asset } from '../lib/asset';
 
 export type Project = {
-  number: string;
   name: string;
   category: string;
   stack: string;
@@ -35,7 +34,6 @@ const shots = (slug: string) => ({
 
 export const projects: Project[] = [
   {
-    number: '01',
     name: 'EduMU',
     category: 'Personal Project · Live',
     stack: 'React · TypeScript · Supabase · PostgreSQL',
@@ -47,7 +45,6 @@ export const projects: Project[] = [
     images: shots('edumu'),
   },
   {
-    number: '02',
     name: 'Invoice Maker',
     category: 'Personal Project · Live',
     stack: 'Next.js 14 · TypeScript · Supabase · Tailwind',
@@ -59,7 +56,6 @@ export const projects: Project[] = [
     images: shots('invoice'),
   },
   {
-    number: '03',
     name: 'DevIntel',
     category: 'Personal Project · Live',
     stack: 'Web App · Progressive Web App (PWA)',
@@ -70,7 +66,6 @@ export const projects: Project[] = [
     images: shots('devintel'),
   },
   {
-    number: '02',
     name: 'Ninja Runner',
     category: 'Team Project · Playable',
     stack: 'Construct 3 · 2D Platformer',
@@ -90,7 +85,6 @@ export const projects: Project[] = [
     images: shots('snake'),
   },
   {
-    number: '03',
     name: 'GeoExplorer',
     category: 'Personal Project · Live',
     stack: 'Flutter · Dart',
@@ -106,7 +100,6 @@ export const projects: Project[] = [
     },
   },
   {
-    number: '04',
     name: 'SmileCare',
     category: 'Personal Project · Live',
     stack: 'Flutter · Dart · Supabase',
@@ -122,7 +115,6 @@ export const projects: Project[] = [
     },
   },
   {
-    number: '05',
     name: 'BookSmart Web Application',
     category: 'Academic Project',
     stack: 'ASP.NET · SQL Server · Bootstrap',
@@ -132,7 +124,6 @@ export const projects: Project[] = [
     images: shots('booksmart'),
   },
   {
-    number: '06',
     name: 'Bookstore Management System',
     category: 'Academic Project',
     stack: 'Oracle Forms · SQL',
@@ -142,7 +133,6 @@ export const projects: Project[] = [
     images: shots('oracleforms'),
   },
   {
-    number: '07',
     name: 'BookStore Website',
     category: 'Academic Project',
     stack: 'HTML · CSS · JavaScript · jQuery',
@@ -152,7 +142,6 @@ export const projects: Project[] = [
     images: shots('bookstore'),
   },
   {
-    number: '08',
     name: 'Snake Game',
     category: 'Team Project · Playable',
     stack: 'Java · Swing · Object-Oriented Design',
@@ -164,7 +153,6 @@ export const projects: Project[] = [
     images: shots('snake'),
   },
   {
-    number: '09',
     name: 'Student Management System',
     category: 'Academic Project · Live',
     stack: 'Java · Swing · Data Structures',
@@ -176,7 +164,6 @@ export const projects: Project[] = [
     images: shots('sms'),
   },
   {
-    number: '10',
     name: 'Lottotech',
     category: 'Year 1 Project · Playable',
     stack: 'Java · Swing',
@@ -188,7 +175,6 @@ export const projects: Project[] = [
     images: shots('lottotech'),
   },
   {
-    number: '11',
     name: 'Horse Betting 365',
     category: 'Personal Project · Playable',
     stack: 'Java · Swing',
@@ -200,7 +186,6 @@ export const projects: Project[] = [
     images: shots('horse'),
   },
   {
-    number: '12',
     name: 'BeatCam',
     category: 'Personal Project',
     stack: 'JavaScript',
@@ -210,7 +195,6 @@ export const projects: Project[] = [
     images: shots('beatcam'),
   },
   {
-    number: '13',
     name: 'T_Emblemy Collectibles',
     category: 'Web Project · Live',
     stack: 'HTML · CSS · JavaScript',
