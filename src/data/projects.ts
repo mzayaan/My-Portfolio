@@ -48,6 +48,18 @@ export const projects: Project[] = [
   },
   {
     number: '02',
+    name: 'Invoice Maker',
+    category: 'Personal Project · Live',
+    stack: 'Next.js 14 · TypeScript · Supabase · Tailwind',
+    summary:
+      'A multi-tenant invoice generator. Sign up, onboard an organisation, then manage clients and products, build invoices from saved items or custom lines, and pick from ten design templates before exporting a print-tuned A4 PDF. Tracks draft, sent, paid, overdue and void status with partial payment recording, and locks invoices once issued. Built on Next.js App Router with Server Actions, and Supabase Postgres with row-level security scoping every business to its own data.',
+    href: repo('Invoice-maker'),
+    live: 'https://invoice-maker-z4h2.onrender.com',
+    liveLabel: 'Live Site',
+    images: shots('invoice'),
+  },
+  {
+    number: '03',
     name: 'DevIntel',
     category: 'Personal Project · Live',
     stack: 'Web App · Progressive Web App (PWA)',
