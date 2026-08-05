@@ -51,6 +51,11 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    # Repeated at job level: deploy-pages mints an OIDC token, and a job-level
+    # permissions block is the reliable place to grant it.
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
