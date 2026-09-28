@@ -13,7 +13,7 @@ export default function ModulesSection() {
           className="text-[0.7rem] font-light uppercase tracking-[0.3em] opacity-60 sm:text-xs"
           style={{ color: '#D7E2EA' }}
         >
-          Year 3 · Semester 1 · Academic Year 2026
+          Year 3 · Semester 2 · Academic Year 2026
         </span>
       </FadeIn>
 

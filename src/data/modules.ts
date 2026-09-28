@@ -6,36 +6,29 @@ export type Module = {
 };
 
 /**
- * Year 3 · Semester 1 modules, taken from the official UTM Module Information Packs
- * (Academic Year 2026, Semester 1). All are 6 credits, Level 3, 15 weeks.
+ * Year 3 · Semester 2 modules (Academic Year 2026, Semester 2).
+ * The System Development Project is covered separately by the Dissertation section.
  */
 export const modules: Module[] = [
   {
     number: '01',
-    name: 'Advanced Mobile Application Development',
+    name: 'Blockchain Systems',
     description:
-      'Cross-platform mobile app development in Flutter and Dart. Covers widgets, layouts and views, stateful UI and animations, screen navigation, activities and intents, HTTP requests, and local plus remote data access with Supabase — through to deploying builds to the app stores.',
-    topics: ['Flutter', 'Dart', 'Supabase', 'Android Studio', 'VS Code'],
+      'Distributed ledger technology from first principles — cryptographic hashing, digital signatures and Merkle trees, through consensus mechanisms such as proof of work and proof of stake, to writing and deploying smart contracts and reasoning about where a decentralised system is and is not the right answer.',
+    topics: ['Distributed Ledgers', 'Cryptography', 'Consensus', 'Smart Contracts', 'Solidity'],
   },
   {
     number: '02',
-    name: 'Smart IoT Applications',
+    name: 'Software Quality & Testing',
     description:
-      'Designing and deploying intelligent IoT systems end to end. Internet of Things and Web of Things architecture, machine-to-machine communication, microcontroller programming, working with sensors and actuators for data acquisition, and integrating devices with cloud platforms for transmission, visualisation and analysis.',
-    topics: ['Arduino', 'Raspberry Pi', 'Tinkercad', 'Sensors', 'Cloud Integration'],
+      'Building quality into software rather than testing it in afterwards. Test planning and design, unit, integration and system testing, black-box and white-box techniques, coverage and defect tracking, test automation, and the quality standards and review processes that sit around a delivery pipeline.',
+    topics: ['Test Design', 'Unit Testing', 'Automation', 'Code Coverage', 'Quality Assurance'],
   },
   {
     number: '03',
-    name: 'AI & Machine Learning Techniques',
+    name: 'Technopreneurship',
     description:
-      'A conceptual and practical grounding in machine learning: simple, multivariate and polynomial linear regression, logistic regression for classification, and neural networks — implemented and executed in Python across hands-on programming sessions.',
-    topics: ['Python', 'Anaconda', 'Regression', 'Classification', 'Neural Networks'],
-  },
-  {
-    number: '04',
-    name: 'Computer Game Programming',
-    description:
-      'In-depth 2D game design and development in Construct 3. Asset preparation, tile-based games, physics engine controls and game AI, event binding and scripting, sound and image processing, mobile sensors such as accelerometer, touch and GPS — then exporting to Windows Store, Google Play and the web.',
-    topics: ['Construct 3', '2D Graphics', 'Physics Engine', 'Game AI', 'Multi-platform Export'],
+      'Taking a technical idea to market. Opportunity identification and validation, business model design, market and competitor analysis, costing and funding, intellectual property, and pitching a venture — the commercial side of engineering that decides whether a product ever reaches users.',
+    topics: ['Business Models', 'Market Validation', 'Startups', 'Funding', 'Pitching'],
   },
 ];

@@ -9,11 +9,11 @@ export type TimelineEntry = {
 
 export const experience: TimelineEntry[] = [
   {
-    period: 'Year 3 · Semester 1 — Current',
+    period: 'Year 3 · Semester 2 — Current',
     title: 'BSc (Hons) Software Engineering',
     place: 'University of Technology, Mauritius',
     description:
-      'Third-year student on a May 2024 – Feb 2027 programme. Coursework has moved from core software design, database systems and web technologies into mobile, IoT, machine learning and game development.',
+      'Final-year student on a May 2024 – Feb 2027 programme. Coursework has moved from core software design, database systems and web technologies through mobile, IoT, machine learning and game development, and now into blockchain systems, software quality and testing, and technopreneurship — alongside the final year project.',
     tags: ['Software Design', 'Databases', 'Web Technologies', 'Data Structures'],
   },
   {

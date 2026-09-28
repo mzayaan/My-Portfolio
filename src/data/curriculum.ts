@@ -8,7 +8,9 @@ export type CurriculumLevel = {
 
 /**
  * BSc (Hons) Software Engineering — University of Technology, Mauritius.
- * Level 3 lists Semester 1 only; the remaining Level 3 modules follow later.
+ * Semester 1 of Level 3 is complete; Semester 2 is currently in progress.
+ * The System Development Project is deliberately left out of the Semester 2 list —
+ * it has its own Dissertation section.
  */
 export const curriculum: CurriculumLevel[] = [
   {
@@ -50,7 +52,7 @@ export const curriculum: CurriculumLevel[] = [
   {
     level: 'Level 3',
     label: 'Year 3 · Semester 1',
-    status: 'In progress',
+    status: 'Completed',
     note: 'Specialisation — mobile, IoT, machine learning and game development.',
     modules: [
       'Advanced Mobile Application Development',
@@ -62,8 +64,8 @@ export const curriculum: CurriculumLevel[] = [
   {
     level: 'Level 3',
     label: 'Year 3 · Semester 2',
-    status: 'Upcoming',
-    note: 'Still to come — distributed systems, quality assurance and taking a product to market.',
+    status: 'In progress',
+    note: 'Current semester — distributed systems, quality assurance and taking a product to market, alongside the final year project.',
     modules: [
       'Blockchain Systems',
       'Software Quality & Testing',
