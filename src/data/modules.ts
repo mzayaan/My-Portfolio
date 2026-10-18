@@ -6,9 +6,7 @@ export type Module = {
 };
 
 /**
- * Year 3 · Semester 2 modules. Blockchain Systems and Software Quality & Testing are
- * taken from the official UTM Module Information Packs; both are 6 credits, Level 3.
- * Technopreneurship is written from the module title — swap in the MIP wording when available.
+ * Year 3 · Semester 2 modules, all taken from the official UTM Module Information Packs.
  * The System Development Project is covered separately by the Dissertation section.
  */
 export const modules: Module[] = [
@@ -30,7 +28,13 @@ export const modules: Module[] = [
     number: '03',
     name: 'Technopreneurship',
     description:
-      'Taking a technical idea to market. Opportunity identification and validation, business model design, market and competitor analysis, costing and funding, intellectual property, and pitching a venture — the commercial side of engineering that decides whether a product ever reaches users.',
-    topics: ['Business Models', 'Market Validation', 'Startups', 'Funding', 'Pitching'],
+      'Turning a technology-driven idea into a venture. Opportunity identification and market gap analysis, ideation and innovation techniques, building out a Business Model Canvas, market research and customer validation, prototyping an MVP, startup financing and funding sources, intellectual property and the legal side, building and managing a startup team, go-to-market and marketing strategy, and pitching to investors.',
+    topics: [
+      'Business Model Canvas',
+      'Market Research',
+      'MVP Prototyping',
+      'Startup Funding',
+      'Pitching',
+    ],
   },
 ];
