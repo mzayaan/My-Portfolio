@@ -1,10 +1,9 @@
 import FadeIn from '../components/FadeIn';
-import Magnet from '../components/Magnet';
 import ContactButton from '../components/ContactButton';
 import { navLinks, site } from '../config/site';
 import { asset } from '../lib/asset';
 
-const PORTRAIT = asset('zayaan-photo.webp');
+const PORTRAIT = asset('zayaan-photo-circle.webp');
 
 export default function HeroSection() {
   return (
@@ -74,27 +73,18 @@ export default function HeroSection() {
         </FadeIn>
       </div>
 
-      {/* Portrait */}
+      {/* Portrait — fixed circular avatar on the right, no cursor interaction */}
       <FadeIn
         delay={0.6}
         y={30}
-        className="absolute inset-x-0 bottom-0 z-10 mx-auto flex w-[300px] justify-center sm:w-[380px] md:w-[460px] lg:w-[520px]"
+        className="pointer-events-none absolute inset-y-0 right-[6%] z-10 my-auto h-[170px] w-[170px] sm:h-[230px] sm:w-[230px] md:right-[9%] md:h-[290px] md:w-[290px] lg:h-[330px] lg:w-[330px]"
       >
-        <Magnet
-          padding={150}
-          strength={3}
-          activeTransition="transform 0.3s ease-out"
-          inactiveTransition="transform 0.6s ease-in-out"
-          wrapperClassName="w-full"
-          className="w-full"
-        >
-          <img
-            src={PORTRAIT}
-            alt={`${site.fullName}, ${site.role}`}
-            className="pointer-events-none w-full select-none object-contain"
-            draggable={false}
-          />
-        </Magnet>
+        <img
+          src={PORTRAIT}
+          alt={`${site.fullName}, ${site.role}`}
+          className="h-full w-full select-none rounded-full border-4 border-[#D7E2EA] object-cover md:border-[6px]"
+          draggable={false}
+        />
       </FadeIn>
     </section>
   );
