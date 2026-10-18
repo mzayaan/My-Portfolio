@@ -4,7 +4,7 @@ import ContactButton from '../components/ContactButton';
 import { navLinks, site } from '../config/site';
 import { asset } from '../lib/asset';
 
-const PORTRAIT = asset('zayaan-avatar.webp');
+const PORTRAIT = asset('zayaan-photo.webp');
 
 export default function HeroSection() {
   return (
@@ -78,7 +78,7 @@ export default function HeroSection() {
       <FadeIn
         delay={0.6}
         y={30}
-        className="absolute left-1/2 top-1/2 z-10 flex w-[260px] -translate-x-1/2 -translate-y-1/2 justify-center sm:bottom-2 sm:top-auto sm:w-[330px] sm:translate-y-0 md:bottom-0 md:w-[400px] lg:w-[460px]"
+        className="absolute left-1/2 top-1/2 z-10 flex w-[300px] -translate-x-1/2 -translate-y-1/2 justify-center sm:bottom-0 sm:top-auto sm:w-[380px] sm:translate-y-0 md:bottom-0 md:w-[460px] lg:w-[520px]"
       >
         <Magnet
           padding={150}
